@@ -1,13 +1,21 @@
 <template>
-  <h2>Hello world</h2>
+<div>
+  <h2>{{ title }}</h2>
+</div>
 </template>
 
 <script>
 
 export default {
   name: 'App',
-  components: {
+  data() {
+    return {
+      title: "hello madhu"
+    }
+  },
+  methods: {
   }
+
 }
 </script>
 
