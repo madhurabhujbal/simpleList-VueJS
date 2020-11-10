@@ -1,6 +1,7 @@
 <template>
 <div>
   <h2>{{ title }}</h2>
+  <button @click="buttonClicked">Button</button>
 </div>
 </template>
 
@@ -14,6 +15,9 @@ export default {
     }
   },
   methods: {
+    buttonClicked() {
+      this.title = "button clicked"
+}
   }
 
 }
