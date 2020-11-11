@@ -1,6 +1,8 @@
 <template>
 <div>
-  <h2>{{ title }}</h2>
+  <li v-for="(item, id) in listItems" v-bind:key="id">
+    {{item.title}}
+  </li>
   <button @click="buttonClicked">Button</button>
 </div>
 </template>
@@ -11,7 +13,11 @@ export default {
   name: 'App',
   data() {
     return {
-      title: "hello madhu"
+      listItems: [
+        {id: 1, title: "Sunday"},
+        {id: 2, title: "Monday"},
+        {id: 3, title: "Tuesday"}
+      ]
     }
   },
   methods: {
