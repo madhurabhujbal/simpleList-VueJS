@@ -1,25 +1,15 @@
 <template>
 <div>
-  <li v-for="(item, id) in listItems" v-bind:key="id">
-    {{item.title}}
-  </li>
+  <DaysOfWeek />
   <button @click="buttonClicked">Button</button>
 </div>
 </template>
 
 <script>
-
+import DaysOfWeek from './components/DaysOfWeek';
 export default {
   name: 'App',
-  data() {
-    return {
-      listItems: [
-        {id: 1, title: "Sunday"},
-        {id: 2, title: "Monday"},
-        {id: 3, title: "Tuesday"}
-      ]
-    }
-  },
+  componenets: { DaysOfWeek },
   methods: {
     buttonClicked() {
       this.title = "button clicked"
