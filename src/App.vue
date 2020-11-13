@@ -1,13 +1,21 @@
 <template>
-  <h2>Hello world</h2>
+<div>
+  <DaysOfWeek />
+  <button @click="buttonClicked">Button</button>
+</div>
 </template>
 
 <script>
-
+import DaysOfWeek from './components/DaysOfWeek';
 export default {
   name: 'App',
-  components: {
+  componenets: { DaysOfWeek },
+  methods: {
+    buttonClicked() {
+      this.title = "button clicked"
+}
   }
+
 }
 </script>
 
