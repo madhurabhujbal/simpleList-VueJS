@@ -1,15 +1,15 @@
 <template>
-<div>
-  <DaysOfWeek />
+<div id="app">
+  <WeekDay />
   <button @click="buttonClicked">Button</button>
 </div>
 </template>
 
 <script>
-import DaysOfWeek from './components/DaysOfWeek';
+import WeekDay from './components/WeekDays';
 export default {
   name: 'App',
-  componenets: { DaysOfWeek },
+  components: { WeekDay },
   methods: {
     buttonClicked() {
       this.title = "button clicked"
@@ -20,5 +20,7 @@ export default {
 </script>
 
 <style>
-
+button {
+  margin-top: 30%;
+}
 </style>
