@@ -6,16 +6,15 @@
 </template>
 
 <script>
-import WeekDay from './components/WeekDays';
+import WeekDay from './components/WeekDay';
 export default {
   name: 'App',
   components: { WeekDay },
   methods: {
     buttonClicked() {
       this.title = "button clicked"
-}
-  }
-
+    }
+  },
 }
 </script>
 
