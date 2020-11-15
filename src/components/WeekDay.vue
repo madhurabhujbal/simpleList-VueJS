@@ -9,9 +9,5 @@ export default {
 </script>
 
 <style>
-    /* h2 {
-        margin-top: 5%;
-        margin-bottom: 5%;
-    } */
 
 </style>
