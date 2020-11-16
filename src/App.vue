@@ -1,6 +1,6 @@
 <template>
-<div id="app">
-    <li><WeekDay /></li>
+<div>
+    <WeekDay />
   <button @click="buttonClicked">Button</button>
 </div>
 </template>
