@@ -1,7 +1,7 @@
 <template>
 <div>
     <ul v-for="(item, id) in listItems" v-bind:key="id">
-    <WeekDay />
+    <WeekDay title = {{listItems[id].title}} />
     </ul>
   <button @click="buttonClicked">Button</button>
 </div>

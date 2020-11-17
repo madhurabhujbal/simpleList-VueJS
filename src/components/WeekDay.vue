@@ -1,12 +1,14 @@
 <template>
   <div>
-      <li> {{listItems}} </li>
+      <li> {{title}} </li>
   </div>
 </template>
 
 <script>
 export default {
     name: 'WeekDay',
+    props: ['title'],
+
 }
 </script>
 
