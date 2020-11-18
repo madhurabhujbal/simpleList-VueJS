@@ -1,8 +1,8 @@
 <template>
   <div>
-    <ul v-for="(item, id) in list" v-bind:key="id">
-      <li> {{item.title}} </li>
-    </ul>
+    <ol>
+      <li v-for="(item, id) in list" v-bind:key='id'> {{item.title}} </li>
+    </ol>
   </div>
 </template>
 
