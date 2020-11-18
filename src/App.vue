@@ -1,6 +1,6 @@
 <template>
 <div>
-  <WeekDay v-bind:listItems="listItems" />
+  <WeekDay v-bind:list="listItems" />
   <button @click="buttonClicked">Button</button>
 </div>
 </template>
