@@ -1,11 +1,13 @@
 <template>
-      <li> {{day}} </li>
+  <div>
+      {{weekday.day}}
+  </div>
 </template>
 
 <script>
 export default {
     name: 'WeekDay',
-    props: ['day'],
+    props: ['weekday'],
 
 }
 </script>

@@ -1,8 +1,6 @@
 <template>
 <div>
-  <ol>
-    <WeekDay v-for="(item, id) in listItems" v-bind:key='id' v-bind:day="item.title" />
-  </ol>
+    <WeekDay v-for="(item, id) in listItems" v-bind:key='id' v-bind:weekday="item" />
   <button @click="buttonClicked">Button</button>
 </div>
 </template>
@@ -15,13 +13,13 @@ export default {
   data() {
     return {
       listItems: [
-        {id: 1, title: "Sunday"},
-        {id: 2, title: "Monday"},
-        {id: 3, title: "Tuesday"},
-        {id: 4, title: "Wednesday"},
-        {id: 5, title: "Thursday"},
-        {id: 6, title: "Friday"},
-        {id: 7, title: "Saturday"}
+        {id: 1, day: "Sunday"},
+        {id: 2, day: "Monday"},
+        {id: 3, day: "Tuesday"},
+        {id: 4, day: "Wednesday"},
+        {id: 5, day: "Thursday"},
+        {id: 6, day: "Friday"},
+        {id: 7, day: "Saturday"}
       ]
     }
   },
