@@ -1,6 +1,8 @@
 <template>
 <div>
-  <WeekDay v-for="(item, id) in listItems" v-bind:key='id' v-bind:day="item.title" />
+  <ol>
+    <WeekDay v-for="(item, id) in listItems" v-bind:key='id' v-bind:day="item.title" />
+  </ol>
   <button @click="buttonClicked">Button</button>
 </div>
 </template>

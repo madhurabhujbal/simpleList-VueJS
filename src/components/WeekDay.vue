@@ -1,9 +1,5 @@
 <template>
-  <div>
-    <ol>
       <li> {{day}} </li>
-    </ol>
-  </div>
 </template>
 
 <script>
