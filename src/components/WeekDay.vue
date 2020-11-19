@@ -1,7 +1,7 @@
 <template>
   <div>
     <ol>
-      <li v-for="(item, id) in list" v-bind:key='id'> {{item.title}} </li>
+      <li> {{day}} </li>
     </ol>
   </div>
 </template>
@@ -9,7 +9,7 @@
 <script>
 export default {
     name: 'WeekDay',
-    props: ['list'],
+    props: ['day'],
 
 }
 </script>
