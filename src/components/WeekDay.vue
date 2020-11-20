@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="week-day">
       {{weekday.day}}
   </div>
 </template>
@@ -13,5 +13,12 @@ export default {
 </script>
 
 <style>
+.week-day {
+  padding: 8px;
+  background: rgb(212, 211, 211);
+  border-style: solid;
+  border-color: white;
+}
+
 
 </style>

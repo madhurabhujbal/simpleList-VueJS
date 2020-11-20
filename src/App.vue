@@ -1,7 +1,7 @@
 <template>
-<div>
+<div class="list-app">
     <WeekDay v-for="(item, id) in listItems" v-bind:key='id' v-bind:weekday="item" />
-  <button @click="buttonClicked">Button</button>
+  <button class="button" @click="buttonClicked">Button</button>
 </div>
 </template>
 
@@ -33,5 +33,12 @@ export default {
 </script>
 
 <style>
+.list-app {
+margin-left: 9px;
+}
+
+.button {
+  margin-top: 8px;
+}
 
 </style>
