@@ -1,5 +1,5 @@
 <template>
-  <div class="week-day">
+  <div class="col-md-2 week-day">
       {{weekday.day}}
   </div>
 </template>
