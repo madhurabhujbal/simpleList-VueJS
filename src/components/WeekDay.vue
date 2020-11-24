@@ -1,6 +1,6 @@
 <template>
-  <div class="col-md-2">
-    <div :class="weekday.id %2 === 0 ? 'week-day': 'odd-day'">
+  <div>
+    <div :class="'col-md-2 ' + getId()">
       {{weekday.day}}
     </div>
   </div>
@@ -11,18 +11,16 @@ export default {
     name: 'WeekDay',
     props: ['weekday'],
     methods: {
-      // getId() {
-      //   return {
-      //     id : ((this.props[0].id)%2==0) ? 'even-day' : 'odd-day'
-      //   }
-      // }
+      getId() {
+        return this.weekday.id % 2 === 0 ? "even-day": "odd-day";
+      }
     }
 }
 </script>
 
 <style>
 
-.week-day {
+.even-day {
   padding: 8px;
   background: rgb(212, 211, 211);
   border-style: solid;
@@ -30,8 +28,10 @@ export default {
 }
 
 .odd-day {
-  background-color: brown;
-  color: brown;
+  padding: 8px;
+  border-style: solid;
+  border-color: white;
+  background: rgb(238, 207, 207);
 }
 
 </style>
