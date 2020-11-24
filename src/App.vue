@@ -35,9 +35,9 @@ export default {
 </script>
 
 <style>
+
 .list-app {
   margin-top: 10px;
-  margin-left: 9px;
 }
 
 .button {
