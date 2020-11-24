@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class>
     <div :class="'col-md-2 ' + getId()">
       {{weekday.day}}
     </div>
@@ -12,7 +12,7 @@ export default {
     props: ['weekday'],
     methods: {
       getId() {
-        return this.weekday.id % 2 === 0 ? "even-day": "odd-day";
+        return this.weekday.id % 2 === 0 ? "even-day" : "odd-day";
       }
     }
 }
@@ -29,9 +29,9 @@ export default {
 
 .odd-day {
   padding: 8px;
+  background: rgb(238, 207, 207);
   border-style: solid;
   border-color: white;
-  background: rgb(238, 207, 207);
 }
 
 </style>
