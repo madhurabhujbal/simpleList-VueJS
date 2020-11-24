@@ -1,9 +1,6 @@
 <template>
   <div class="col-md-2">
-    <div v-if="weekday.id %2 === 0" class="week-day">
-      {{weekday.day}}
-    </div>
-    <div v-else class="odd-day">
+    <div :class="weekday.id %2 === 0 ? 'week-day': 'odd-day'">
       {{weekday.day}}
     </div>
   </div>
