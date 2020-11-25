@@ -1,8 +1,9 @@
 <template>
-  <div class>
+  <div>
     <div :class="'col-md-2 ' + getId()">
       {{weekday.day}}
     </div>
+    <button @click="buttonClicked">Button</button>
   </div>
 </template>
 
@@ -32,6 +33,10 @@ export default {
   background: rgb(238, 207, 207);
   border-style: solid;
   border-color: white;
+}
+
+button {
+  margin-left: 50%;
 }
 
 </style>
