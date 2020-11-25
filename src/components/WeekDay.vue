@@ -1,8 +1,8 @@
 <template>
-  <div class="col-md-2 week-day" v-bind:class="getId()">
-    <span :class="getId">
+  <div class>
+    <div :class="'col-md-2 ' + getId()">
       {{weekday.day}}
-    </span>
+    </div>
   </div>
 </template>
 
@@ -12,9 +12,7 @@ export default {
     props: ['weekday'],
     methods: {
       getId() {
-        return {
-          id : ((this.props[0].id)%2==0) ? 'even-day' : 'odd-day'
-        }
+        return this.weekday.id % 2 === 0 ? "even-day" : "odd-day";
       }
     }
 }
@@ -22,7 +20,7 @@ export default {
 
 <style>
 
-.week-day {
+.even-day {
   padding: 8px;
   background: rgb(212, 211, 211);
   border-style: solid;
@@ -30,7 +28,10 @@ export default {
 }
 
 .odd-day {
-  background: brown;
+  padding: 8px;
+  background: rgb(238, 207, 207);
+  border-style: solid;
+  border-color: white;
 }
 
 </style>
