@@ -16,6 +16,9 @@ export default {
     methods: {
       getId() {
         return this.weekday.id % 2 === 0 ? "even-day" : "odd-day";
+      },
+      buttonClicked() {
+        console.log("delete button clicked");
       }
     }
 }
