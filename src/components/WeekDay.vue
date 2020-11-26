@@ -4,7 +4,7 @@
       {{weekday.day}}
     </div>
     <div class="col-md-2">
-      <button @click="buttonClicked">Button</button>
+      <button @click="buttonClicked">Delete</button>
     </div>
   </div>
 </template>
@@ -28,6 +28,7 @@ export default {
   background: rgb(212, 211, 211);
   border-style: solid;
   border-color: white;
+  text-align: center;
 }
 
 .odd-day {
@@ -35,11 +36,12 @@ export default {
   background: rgb(238, 207, 207);
   border-style: solid;
   border-color: white;
+  text-align: center;
 }
 
 button {
   padding: 8px;
-  background: rgb(212, 211, 211);
+  background: rgb(128, 161, 206);
   margin-left: 30px;
   border-style: solid;
   border-color: white;
