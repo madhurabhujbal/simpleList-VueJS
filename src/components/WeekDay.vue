@@ -36,7 +36,10 @@ export default {
 }
 
 button {
-  margin-left: 50%;
+  padding: 8px;
+  background: rgb(212, 211, 211);
+  border-style: solid;
+  border-color: white;
 }
 
 </style>
