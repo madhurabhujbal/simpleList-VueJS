@@ -1,7 +1,9 @@
 <template>
 <div class="app">
   <div class="container list-app">
-     <WeekDay class="row" v-for="(item, id) in listItems" v-bind:key='id' v-bind:weekday="item" />
+    <div>
+      <WeekDay v-for="(item, id) in listItems" v-bind:key='id' v-bind:weekday="item" />
+    </div>
   </div>
 </div>
 </template>
@@ -26,8 +28,8 @@ export default {
   },
   methods: {
     buttonClicked() {
-      this.title = "button clicked"
-    }
+        console.log("delete button clicked");
+      }
   },
 
 }
@@ -40,3 +42,4 @@ export default {
 }
 
 </style>
+
