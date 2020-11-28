@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="row">
     <div :class="'col-md-2 ' + getId()">
       {{weekday.day}}
     </div>
@@ -17,9 +17,6 @@ export default {
       getId() {
         return this.weekday.id % 2 === 0 ? "even-day" : "odd-day";
       },
-      buttonClicked() {
-        console.log("delete button clicked");
-      }
     }
 }
 </script>
