@@ -2,7 +2,10 @@
 <div class="app">
   <div class="container list-app">
     <div>
-      <WeekDay v-for="(item, id) in listItems" v-bind:key='id' v-bind:weekday="item" />
+      <WeekDay v-for="(item, id) in listItems"
+                v-bind:key='id'
+                v-bind:weekday="item"
+                @delete-listitem= buttonClicked />
     </div>
   </div>
 </div>
