@@ -33,12 +33,14 @@ export default {
     buttonClicked(e) {
         console.log("delete button clicked for row " + e.id);
         // this.listItems.splice(e.id-1, 1, e.id+1);
-        let newList = [];
-        for( let obj of this.listItems) {
-          if(obj.id === e.id) continue;
-          newList.push(obj);
-        }
-        this.listItems = newList;
+
+        this.listItems = this.listItems.filter( obj => obj.id != e.id);
+        // let newList = [];
+        // for( let obj of this.listItems) {
+        //   if(obj.id === e.id) continue;
+        //   newList.push(obj);
+        // }
+        // this.listItems = newList;
         console.log(e);
         console.log(this.listItems);
       }
