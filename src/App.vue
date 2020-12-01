@@ -30,8 +30,8 @@ export default {
     }
   },
   methods: {
-    buttonClicked() {
-        console.log("delete button clicked");
+    buttonClicked(e) {
+        console.log("delete button clicked for row " + e.id);
       }
   },
 
