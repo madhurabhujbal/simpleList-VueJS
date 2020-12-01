@@ -32,15 +32,21 @@ export default {
   methods: {
     buttonClicked(e) {
         console.log("delete button clicked for row " + e.id);
+
+        //Splice returns removed items and modifies the original array. Hence not a good approach
         // this.listItems.splice(e.id-1, 1, e.id+1);
 
-        this.listItems = this.listItems.filter( obj => obj.id != e.id);
+        //Approach 1:
         // let newList = [];
         // for( let obj of this.listItems) {
         //   if(obj.id === e.id) continue;
         //   newList.push(obj);
         // }
         // this.listItems = newList;
+
+        //Approach 2:
+        this.listItems = this.listItems.filter( obj => obj.id != e.id);
+
         console.log(e);
         console.log(this.listItems);
       }
