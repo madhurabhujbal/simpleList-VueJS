@@ -4,7 +4,7 @@
       {{weekday.day}}
     </div>
     <div class="col-md-2">
-      <button @click="buttonClicked">Delete</button>
+      <button @click="buttonClicked(weekday)">Delete</button>
     </div>
   </div>
 </template>
@@ -17,6 +17,9 @@ export default {
       getId() {
         return this.weekday.id % 2 === 0 ? "even-day" : "odd-day";
       },
+      buttonClicked(weekday) {
+        this.$emit('delete-listitem', weekday)
+      }
     }
 }
 </script>
